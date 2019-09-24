@@ -1,40 +1,40 @@
-# atec蚂蚁金服NLP智能客服比赛  16th/2632
+# atec_NLP_chatbot  dataset from:
 https://dc.cloud.alipay.com/index#/topic/intro?id=3
 
 
-## 目录    
+## Content   
 ```
 project
 │   README.md
 │      
 │
-└───data/ 词向量及一些中间文件
+└───data/ word vectors
 │   │ 
-│   └───data/ 训练数据
+│   └───data/ trainiing data set
 │   │
-│   └───log_dir/ log文件
+│   └───log_dir/ log file
 │   │
 │   │
-│   └───share/  线下训练与线上提交的公共文件
-│       └─── jieba/ 分词、停用词
+│   └───share/  offline training file and online submission
+│       └─── jieba/ cutting words and stop words
 |       |
-│       └─── mv_w2v/ 训练词向量
+│       └─── mv_w2v/ traning word vector
 |       |
-│       └─── single/ 单模型
+│       └─── single/ single model
 |       |
-|       └─── stack/ cv模型及中间数据
+|       └─── stack/ cv model and other files
 │   
 └───model/
-│   │  各种模型
+│   │  all kinds of model
 │   │   
 └───feature/
-│   │  提取的人工特征
+│   │  extract some features
 │   │   
 └───submit/
-│   │  线下测试submit
+│   │  offline submit
 │   │   
 └───util/
-│   │  辅助文件，分词，训练词向量，拼音转换等
+│   │  tools
 │   │   
     
     
@@ -43,19 +43,19 @@ project
 
 
 
-## 运行流程：    
-参数配置在util/config.py中
+## sun instructions：    
+parameters are in util/config.py
 
-python util/CutWord.py (首次运行时)
-python  util/w2v.py  (首次运行时)
+python util/CutWord.py (the time of first time)
+python  util/w2v.py  
 
 python train.py cv  cnn1  
-对cnn1模型采用交叉验证。
 
 
 
 
-## 一些实验记录
+
+## some records
 0612 fix cv bugs offline 数据扩充5 cv  CNN :  0.63407952549263558
 0.6155
 0613 fix cv bugs offline 数据扩充5 cv ESIM :  0.65816989095636136

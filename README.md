@@ -17,5 +17,5 @@ some projects for chatbots
 phone_comments_classification
 -----------
 ### results:
-![1](https://github.com/Chriszhangmw/ChatBots/master/phone_comments_classification/loss.png)
-![2](https://github.com/Chriszhangmw/ChatBots/master/phone_comments_classification/myplot22.png)
+![1](https://raw.github.com/Chriszhangmw/ChatBots/master/phone_comments_classification/loss.png)
+![2](https://raw.github.com/Chriszhangmw/ChatBots/master/phone_comments_classification/myplot22.png)

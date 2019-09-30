@@ -11,7 +11,7 @@ some projects for chatbots
 
 ****
 ## content
-* [phone_comments_classification](#phone_comments_classification
+* [phone_comments_classification](#phone_comments_classification)
 * [atec_sentence_similarity](#atec_sentence_similarity)
 
 phone_comments_classification

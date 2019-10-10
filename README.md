@@ -111,7 +111,7 @@ ON LINE :0.6206
 NER_Medical
 -----------
 ### results:
-![3](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_Medical/loss.png)
-![4](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_Medical/confusion.png)
+![5](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_Medical/loss.png)
+![6](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_Medical/confusion.png)
 ![1](https://raw.github.com/Chriszhangmw/ChatBots/master/phone_comments_classification/loss.png)
 ![2](https://raw.github.com/Chriszhangmw/ChatBots/master/phone_comments_classification/myplot22.png)

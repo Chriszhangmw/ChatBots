@@ -107,3 +107,9 @@ n :', 0.52228330874667162, 0.52633540429317449, 0.52415987274990683
 'mean :', 0.45830773149153237, 0.67153672904068951, 0.54450204294307059)
 ON LINE :0.6206
 
+
+NER_Medical
+-----------
+### results:
+![3](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_Medical/loss.png)
+![4](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_Medical/confusion.png)

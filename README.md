@@ -14,6 +14,7 @@ some projects for chatbots
 * [phone_comments_classification](#phone_comments_classification)
 * [atec_sentence_similarity](#atec_sentence_similarity)
 * [NER_Medical](#NER_Medical)
+* [chatbot_movies](#chatbot_movies)
 
 phone_comments_classification
 -----------
@@ -113,3 +114,8 @@ NER_Medical
 ### results:
 ![3](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_medical/loss.png)
 ![4](https://raw.github.com/Chriszhangmw/ChatBots/master/NER_medical/confusion.png)
+
+chatbot_movies
+-----------
+### results:
+![5](https://raw.github.com/Chriszhangmw/ChatBots/master/chatbot/display.png)

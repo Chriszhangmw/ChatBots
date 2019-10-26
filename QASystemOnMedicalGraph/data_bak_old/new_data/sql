@@ -1,0 +1,74 @@
+LOAD CSV WITH HEADERS FROM 'file:///disease_info.csv' AS line
+MERGE (p:Disease { diseaseID:toInteger(line.diseaseID),
+diseaseName:line.diseaseName,
+part:line.part,
+age:line.age,infect:line.infect,
+insurance:line.insurance,
+department:line.department,
+checklist:line.checklist,
+treatment:line.treatment,
+drugs:line.drugs,
+period:line.period,
+rate:line.rate,
+money:line.money})
+
+diseaseID,aliasID
+
+
+
+LOAD CSV WITH HEADERS  FROM "file:///symptom.csv" AS line
+MERGE (p:Symptom{symID:toInteger(line.symID),symptom:line.symptom})
+
+LOAD CSV WITH HEADERS  FROM "file:///disease.csv" AS line
+MERGE (p:Disease_new{diseaseIDnew:toInteger(line.diseaseIDnew),disease_namenew:line.disease_namenew})
+
+LOAD CSV WITH HEADERS  FROM "file:///disease_atrr.csv" AS line
+MERGE (p:Disease_attr_new{diseaseIDnew:toInteger(line.diseaseIDnew),disease_namenew:line.disease_namenew,atrrsnew:line.atrrsnew})
+
+LOAD CSV WITH HEADERS  FROM "file:///complications.csv" AS line
+MERGE (p:Complication{compliID:toInteger(line.compliID),complication:line.complication})
+
+LOAD CSV WITH HEADERS FROM "file:///disease_symptom.csv" AS line 
+match (from:Disease{diseaseID:toInteger(line.diseaseID)}),(to:Symptom{symID:toInteger(line.symID)})  
+merge (from)-[r:actedin{diseaseID:toInteger(line.diseaseID),symID:toInteger(line.symID)}]->(to)
+
+
+
+LOAD CSV WITH HEADERS FROM "file:///disease_complication.csv" AS line 
+match (from:Disease{diseaseID:toInteger(line.diseaseID)}),(to:Complication{compliID:toInteger(line.compliID)})  
+merge (from)-[r:actedin{diseaseID:toInteger(line.diseaseID),compliID:toInteger(line.compliID)}]->(to)
+
+
+LOAD CSV WITH HEADERS FROM "file:///disease_alias.csv" AS line 
+match (from:Disease{diseaseID:toInteger(line.diseaseID)}),(to:Alias{aliasID:toInteger(line.aliasID)})  
+merge (from)-[r:diseaseTOalias{diseaseID:toInteger(line.diseaseID),aliasID:toInteger(line.aliasID)}]->(to)
+
+
+
+
+
+
+
+
+
+
+
+
+LOAD CSV WITH HEADERS  FROM "file:///student.csv" AS line
+MERGE (p:Student{studentId:toInteger(line.studentId),studentName:line.studentName,
+song:line.song})
+
+LOAD CSV WITH HEADERS  FROM "file:///teacher.csv" AS line
+MERGE (p:Teacher{id:toInteger(line.id),name:line.name,
+address:line.address})
+
+LOAD CSV WITH HEADERS FROM "file:///relation.csv" AS line 
+match (from:Student{studentId:toInteger(line.studentId)}),(to:Teacher{id:toInteger(line.id)})  
+merge (from)-[r:test{studentId:toInteger(line.studentId),id:toInteger(line.id)}]->(to)
+
+
+
+
+
+
+

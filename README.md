@@ -124,6 +124,7 @@ chatbot_movies
 chatbot_medical_knowledge_graph
 -----------
 ### results:
+![8](https://raw.github.com/Chriszhangmw/ChatBots/master/QASystemOnMedicalGraph/3.png)
 ![6](https://raw.github.com/Chriszhangmw/ChatBots/master/QASystemOnMedicalGraph/1.png)
 ![7](https://raw.github.com/Chriszhangmw/ChatBots/master/QASystemOnMedicalGraph/2.png)
 

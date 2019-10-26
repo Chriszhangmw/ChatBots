@@ -15,6 +15,7 @@ some projects for chatbots
 * [atec_sentence_similarity](#atec_sentence_similarity)
 * [NER_Medical](#NER_Medical)
 * [chatbot_movies](#chatbot_movies)
+* [chatbot_medical_knowledge_graph](#chatbot_medical_knowledge_graph)
 
 phone_comments_classification
 -----------
@@ -119,3 +120,10 @@ chatbot_movies
 -----------
 ### results:
 ![5](https://raw.github.com/Chriszhangmw/ChatBots/master/chatbot/display.png)
+
+chatbot_medical_knowledge_graph
+-----------
+### results:
+![6](https://raw.github.com/Chriszhangmw/ChatBots/master/QASystemOnMedicalGraph/1.png)
+![7](https://raw.github.com/Chriszhangmw/ChatBots/master/QASystemOnMedicalGraph/2.png)
+
